@@ -18,13 +18,14 @@
 	display: inline-block;
 	position: relative;
 }
+
 .sitemap ul li:after {
 	content: "";
 	border-top: 1px solid #ccc;
 	border-left: 1px solid #ccc;
 	position: absolute;
 	height: 16px;
-	display: inline;
+	display: inline; 
 	top: 16px;
 	left: 50%;
 	right: 0;
@@ -53,7 +54,8 @@
 }
 .sitemap li:first-child {
 	content: none;
-}
+} 
+
 .after {
 	border-top: 1px solid #ccc;
 	border-left: 1px solid #ccc;
