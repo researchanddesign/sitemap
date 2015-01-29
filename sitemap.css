@@ -13,7 +13,7 @@
 .sitemap ul li a {
 	border: 1px solid #ccc;
 	background: #efefef;
-	padding: 5px;
+	padding: 10px 40px 10px 55px;
 	width: 100px;
 	display: inline-block;
 	position: relative;
@@ -25,7 +25,7 @@
 	border-left: 1px solid #ccc;
 	position: absolute;
 	height: 16px;
-	display: inline; 
+	display: inline;
 	top: 16px;
 	left: 50%;
 	right: 0;
@@ -50,11 +50,11 @@
 	border-top: none;
 }
 .sitemap > ul > li:before, .sitemap > ul > li:after {
-	content: none;	
+	content: none;
 }
 .sitemap li:first-child {
 	content: none;
-} 
+}
 
 .after {
 	border-top: 1px solid #ccc;
@@ -97,6 +97,8 @@
 	margin-top: -16px;
 	margin-left: -80px;
 }
+
+
 /**
 .after3 {
 	border: 1px solid #ccc;
@@ -108,3 +110,17 @@
 	margin-left: -51px;
 }
 **/
+
+.sitemap ul li.typehome a {
+	background-image: url("images/home.svg");
+	background-position: 13px center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+
+.sitemap ul li.typegeneral a {
+	background-image: url("images/general.svg");
+	background-position: 13px center;
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
