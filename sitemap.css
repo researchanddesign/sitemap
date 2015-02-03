@@ -134,16 +134,9 @@
 	background-size: 20px;
 }
 
-section.sitemap {
-	overflow:hidden;
-	position: relative;
-	z-index: 3;
-}
 
-section.buttons {
-	background-color: #fff;
-	position: relative;
-	z-index: 4
+section.sitemap {
+	overflow: hidden;
 }
 
 section.buttons button {
@@ -153,9 +146,4 @@ section.buttons button {
 
 section.buttons input {
 	width: 30%;
-}
-
-nav.navbar {
-	position: relative;
-	z-index: 5;
 }
