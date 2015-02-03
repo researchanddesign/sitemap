@@ -45,6 +45,14 @@
 	</div><!-- /.container-fluid -->
 </nav>
 
+<!-- buttons for zooming -->
+<section class="buttons">
+	<button class="zoom-out">Zoom Out</button>
+	<button class="zoom-in">Zoom In</button>
+	<button class="reset">Reset</button>
+	<input type="range" class="zoom-range" step="0.05" min="0.4" max="0.9">
+</section>
+
 
 <!--Start of sitemap-->
 <section class="sitemap">
@@ -101,5 +109,41 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+<!--   adding panzoon -->
+<script src="panzoom.js"></script>
+<!-- Initialization -->
+<script>
+
+	(function() {
+		var $panzoom = $('section.sitemap').panzoom({
+			$zoomIn: $(".buttons .zoom-in"),
+			$zoomOut: $(".buttons .zoom-out"),
+			$zoomRange: $(".buttons .zoom-range"),
+			$reset: $(".buttons .reset"),
+			startTransform: 'scale(0.9)',
+			maxScale: 0.9,
+			increment: 0.1
+			// contain: true
+		}).panzoom('zoom', true);
+	})();
+
+</script>
+
 </body>
 </html>
+// <script>
+//
+// 				(function() {
+// 					var $panzoom = $('section.sitemap').panzoom({
+// 						$zoomIn: $(".zoom-in"),
+// 						$zoomOut: $section.find(".zoom-out"),
+// 						$zoomRange: $section.find(".zoom-range"),
+// 						$reset: $section.find(".reset"),
+// 						startTransform: 'scale(0.9)',
+// 						maxScale: 0.9,
+// 						increment: 0.1,
+// 						contain: true
+// 					}).panzoom('zoom', true);
+// 				})();
+// 				</script>
+//
