@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<link rel="stylesheet" href="sitemap.css">
+	<link rel="stylesheet" href="css/sitemap.css">
 </head>
 
 <body>
@@ -56,7 +56,7 @@
 
 <!--Start of sitemap-->
 <section class="sitemap">
-	<ul>
+	<ul class="sortable">
 		<li class="typehome">
 			<a href="">Home</a>
 			<ul>
@@ -103,47 +103,49 @@
 </section>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
 
-<!--   adding panzoon -->
-<script src="panzoom.js"></script>
+<!-- adding panzoon -->
+<script src="js/panzoom.js"></script>
+<script src="js/jquery.mjs.nestedSortable.js"></script>
+
 <!-- Initialization -->
 <script>
+	$(document).ready(function(){
 
-	(function() {
-		var $panzoom = $('section.sitemap>ul').panzoom({
+		$('.sortable').nestedSortable({
+			handle: 'a',
+			items: 'li',
+			toleranceElement: '> a',
+			listType: 'ul',
+		});
+
+/*
+		var $panzoom = $('section.sitemap > ul').panzoom({
 			$zoomIn: $(".buttons .zoom-in"),
 			$zoomOut: $(".buttons .zoom-out"),
 			$zoomRange: $(".buttons .zoom-range"),
 			$reset: $(".buttons .reset"),
-			startTransform: 'scale(0.9)',
-			maxScale: 0.9,
-			increment: 0.1
+			//startTransform: 'scale(1)',
+			maxScale: 1,
+			increment: 0.1,
+			//contain: 'invert',
 			// contain: true
 		}).panzoom('zoom', true);
-	})();
+		$panzoom.on("panzoompan", function( e, panzoom ) {
+			console.log( panzoom.getMatrix() );
+		});
+		$panzoom.on('panzoomend', function(e, panzoom, matrix, changed) {
+			if (changed) {
+			} else {
+			}
+		});
+*/
+	});
 
 </script>
 
 </body>
 </html>
-// <script>
-//
-// 				(function() {
-// 					var $panzoom = $('section.sitemap').panzoom({
-// 						$zoomIn: $(".zoom-in"),
-// 						$zoomOut: $section.find(".zoom-out"),
-// 						$zoomRange: $section.find(".zoom-range"),
-// 						$reset: $section.find(".reset"),
-// 						startTransform: 'scale(0.9)',
-// 						maxScale: 0.9,
-// 						increment: 0.1,
-// 						contain: true
-// 					}).panzoom('zoom', true);
-// 				})();
-// 				</script>
-//
