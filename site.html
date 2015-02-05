@@ -122,18 +122,19 @@
 			listType: 'ul',
 		});
 
-/*
+
 		var $panzoom = $('section.sitemap > ul').panzoom({
 			$zoomIn: $(".buttons .zoom-in"),
 			$zoomOut: $(".buttons .zoom-out"),
 			$zoomRange: $(".buttons .zoom-range"),
 			$reset: $(".buttons .reset"),
-			//startTransform: 'scale(1)',
+			disablePan: true,
+			startTransform: 'scale(1.1)',
 			maxScale: 1,
 			increment: 0.1,
 			//contain: 'invert',
 			// contain: true
-		}).panzoom('zoom', true);
+		}).panzoom('zoom', true).zoom(1);
 		$panzoom.on("panzoompan", function( e, panzoom ) {
 			console.log( panzoom.getMatrix() );
 		});
@@ -142,7 +143,7 @@
 			} else {
 			}
 		});
-*/
+
 	});
 
 </script>
