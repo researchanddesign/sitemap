@@ -5,27 +5,43 @@
 	bottom: 0;
 	left: 0;
 }
+
 .sitemap ul {
 	list-style-type: none;
-	padding: 0;
+	padding: 0px;
 	margin: 0;
 	text-align: center;
 	position: relative;
 }
+
 .sitemap ul li {
 	display: table-cell;
 	text-align: center;
-	padding: 30px 15px;
+	padding: 50px 25px;
 	position: relative;
 }
+
 .sitemap ul li a {
 	border: 1px solid #ccc;
 	background: #efefef;
 	padding: 10px 40px 10px 55px;
-	width: 100px;
+	width: 190px;
 	display: inline-block;
-	position: relative;
+	position: relative;  
+	z-index: 1;
+
 }
+
+.sitemap ul li a:hover { 
+	text-decoration: none; 
+	transition-delay: .3s; 
+}
+
+
+.sitemap ul li a:active { 
+	background: yellow;
+} 
+
 .sitemap ul:before {
 	content: "";
 	height: 16px;
@@ -33,17 +49,19 @@
 	left: 50%;
 	right: 0;
 	border-left: 1px solid #ccc;
-	position: absolute;
+	position: absolute; 
 }
+
 .sitemap > ul:before {
 	content: none;
 }
+
 .sitemap ul li:after {
 	content: "";
 	border-top: 1px solid #ccc;
 	border-left: 1px solid #ccc;
 	position: absolute;
-	height: 16px;
+	height: 76px;
 	display: inline;
 	top: 16px;
 	left: 50%;
@@ -52,25 +70,30 @@
 	margin-left: -50px;*/
 
 }
+
 .sitemap ul li ul li:before {
 	content: "";
 	border-top: 1px solid #ccc;
 	position: absolute;
-	height: 16px;
+	height: 26px;
 	display: inline;
 	top: 16px;
 	right: 50%;
 	left: 0;
-}
+} 
+
 .sitemap ul li ul li:first-child:before {
 	border: none;
 }
+
 .sitemap ul li ul li:last-child:after {
 	border-top: none;
 }
+
 .sitemap > ul > li:before, .sitemap > ul > li:after {
 	content: none;
 }
+
 .sitemap li:first-child {
 	content: none;
 }
@@ -131,14 +154,14 @@
 **/
 
 .sitemap ul li.typehome a {
-	background-image: url("images/home.svg");
+	background-image: url("../images/home.svg");
 	background-position: 13px center;
 	background-repeat: no-repeat;
 	background-size: 20px;
 }
 
 .sitemap ul li.typegeneral a {
-	background-image: url("images/general.svg");
+	background-image: url("../images/general.svg");
 	background-position: 13px center;
 	background-repeat: no-repeat;
 	background-size: 20px;
