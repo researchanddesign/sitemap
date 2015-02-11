@@ -47,10 +47,9 @@
 
 <!-- buttons for zooming -->
 <section class="buttons">
-	<button class="zoom-out">Zoom Out</button>
-	<button class="zoom-in">Zoom In</button>
-	<button class="reset">Reset</button>
-	<input type="range" class="zoom-range" step="0.05" min="0.4" max="0.9">
+	<button class="zoom-out">-</button>
+	<button class="zoom-in">+</button>
+	<button class="reset"><img src="images/reset.svg"</button>
 </section>
 
 
@@ -121,7 +120,6 @@
 			toleranceElement: '> a',
 			listType: 'ul',
 		});
-
 
 		var $panzoom = $('section.sitemap > ul').panzoom({
 			$zoomIn: $(".buttons .zoom-in"),
