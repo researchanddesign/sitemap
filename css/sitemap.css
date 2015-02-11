@@ -180,6 +180,7 @@ section.buttons button {
 section.buttons input {
 	width: 30%;
 }
+
 /*place-holder adjustments*/
 
 .ui-sortable-placeholder {
@@ -259,4 +260,11 @@ section.buttons input {
 
 section.sitemap .ui-sortable-placeholder {
 	overflow: hidden !important;
+}
+
+.ui-sortable-helper:active:after {
+	border: none;
+}
+.ui-sortable-helper:active:before {
+	border: none;
 }
