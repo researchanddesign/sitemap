@@ -17,15 +17,15 @@
 .sitemap ul li {
 	display: table-cell;
 	text-align: center;
-	padding: 50px 25px;
+	padding: 50px 10px;
 	position: relative;
 }
 
 .sitemap ul li a {
 	border: 1px solid #ccc;
 	background: #efefef;
-	padding: 10px 40px 10px 55px;
-	width: 190px;
+	padding: 30px 10px 10px 10px;
+	width: 100px;
 	display: inline-block;
 	position: relative;
 	z-index: 1;
@@ -155,14 +155,14 @@
 
 .sitemap ul li.typehome a {
 	background-image: url("../images/home.svg");
-	background-position: 13px center;
+	background-position: center 7px;
 	background-repeat: no-repeat;
 	background-size: 20px;
 }
 
 .sitemap ul li.typegeneral a {
 	background-image: url("../images/general.svg");
-	background-position: 13px center;
+	background-position: center 7px;
 	background-repeat: no-repeat;
 	background-size: 20px;
 }
