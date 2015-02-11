@@ -27,20 +27,20 @@
 	padding: 10px 40px 10px 55px;
 	width: 190px;
 	display: inline-block;
-	position: relative;  
+	position: relative;
 	z-index: 1;
 
 }
 
-.sitemap ul li a:hover { 
-	text-decoration: none; 
-	transition-delay: .3s; 
+.sitemap ul li a:hover {
+	text-decoration: none;
+	transition-delay: .3s;
 }
 
 
-.sitemap ul li a:active { 
+.sitemap ul li a:active {
 	background: yellow;
-} 
+}
 
 .sitemap ul:before {
 	content: "";
@@ -49,7 +49,7 @@
 	left: 50%;
 	right: 0;
 	border-left: 1px solid #ccc;
-	position: absolute; 
+	position: absolute;
 }
 
 .sitemap > ul:before {
@@ -80,7 +80,7 @@
 	top: 16px;
 	right: 50%;
 	left: 0;
-} 
+}
 
 .sitemap ul li ul li:first-child:before {
 	border: none;
@@ -169,7 +169,7 @@
 
 
 section.sitemap {
-	overflow: hidden;
+	overflow: scroll !important;
 }
 
 section.buttons button {
@@ -179,4 +179,84 @@ section.buttons button {
 
 section.buttons input {
 	width: 30%;
+}
+/*place-holder adjustments*/
+
+.ui-sortable-placeholder {
+	background: blue;
+	visibility: visible !important;
+	height: 20px;
+}
+
+.ui-sortable-placeholder:after {
+	border: none;
+}
+
+.ui-sortable-placeholder:before {
+	border: none;
+}
+
+
+.ui-sortable-placeholder:first-child:before {
+	border: none;
+}
+
+.ui-sortable-placeholder:first-child:after {
+	border: none;
+}
+
+.ui-sortable-placeholder:last-child:before {
+	border: none;
+}
+
+.ui-sortable-placeholder:last-child:after {
+	border: none;
+}
+
+.sitemap > ul .ui-sortable-placeholder:before {
+	border: none;
+}
+
+.sitemap > ul .ui-sortable-placeholder:after {
+	border: none;
+}
+
+/*removing borders on dragging item*/
+
+.ui-sortable-helper:before {
+	border: none;
+}
+
+.ui-sortable-helper:after {
+	border: none;
+}
+
+.ui-sortable-helper:first-child:before {
+	border: none;
+}
+
+.ui-sortable-helper:first-child:after {
+	border: none;
+}
+
+.ui-sortable-helper:last-child:before {
+	border: none;
+}
+
+.ui-sortable-helper:last-child:after {
+	border: none;
+}
+
+.sitemap > ul .ui-sortable-helper:before {
+	border: none;
+}
+
+.sitemap > ul .ui-sortable-helper:after {
+	border: none;
+}
+
+/*scroll fix?*/
+
+section.sitemap .ui-sortable-placeholder {
+	overflow: hidden !important;
 }
