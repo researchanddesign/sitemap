@@ -130,12 +130,12 @@
 			$zoomRange: $(".buttons .zoom-range"),
 			$reset: $(".buttons .reset"),
 			disablePan: true,
-			startTransform: 'scale(1.1)',
+			//startTransform: 'scale(1)',
 			maxScale: 1,
 			increment: 0.1,
 			//contain: 'invert',
 			// contain: true
-		}).panzoom('zoom', true).zoom(1);
+		}).panzoom();
 		$panzoom.on("panzoompan", function( e, panzoom ) {
 			console.log( panzoom.getMatrix() );
 		});
