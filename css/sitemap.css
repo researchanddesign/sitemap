@@ -2,8 +2,8 @@ section.buttons {
 	margin-left: 30px;
 	color: #347ab5;
 	position: absolute;
-	margin-top: 655px;
-	z-index: 1;
+	bottom: 25px;
+	z-index: 99;
 	font-size: 1.2em;
 }
 section.buttons button {
@@ -12,7 +12,7 @@ section.buttons button {
 }
 .sitemap {
 	position: absolute;
-	top: 100px;
+	top: 52px;
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -29,15 +29,15 @@ section.buttons button {
 .sitemap ul li {
 	display: table-cell;
 	text-align: center;
-	padding: 50px 25px;
+	padding: 50px 10px;
 	position: relative;
 }
 
 .sitemap ul li a {
 	border: 1px solid #ccc;
 	background: #efefef;
-	padding: 10px 40px 10px 55px;
-	width: 190px;
+	padding: 30px 10px 10px 10px;
+	width: 100px;
 	display: inline-block;
 	position: relative;  
 	z-index: 1;
@@ -165,23 +165,44 @@ section.buttons button {
 
 .sitemap ul li.typehome a {
 	background-image: url("../images/home.svg");
-	background-position: 13px center;
+	background-position: center 7px;
 	background-repeat: no-repeat;
 	background-size: 20px;
 }
 
 .sitemap ul li.typegeneral a {
 	background-image: url("../images/general.svg");
-	background-position: 13px center;
+	background-position: center 7px;
 	background-repeat: no-repeat;
 	background-size: 20px;
 }
 section.sitemap {
-	overflow: hidden;
+	overflow: scroll !important;
 }
 .ui-sortable-helper:active:after {
 	border: none;
 }
 .ui-sortable-helper:active:before {
+	border: none;
+}
+
+/*place-holder adjustments*/
+
+.ui-sortable-placeholder {
+	background: blue;
+	visibility: visible !important;
+	height: 20px;
+}
+
+.ui-sortable-placeholder:after {
+	border: none;
+}
+
+.ui-sortable-placeholder:before {
+	border: none;
+}
+
+
+.ui-sortable-placeholder:first-child:before {
 	border: none;
 }
