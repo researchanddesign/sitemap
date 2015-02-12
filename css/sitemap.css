@@ -110,59 +110,6 @@ section.buttons button {
 	content: none;
 }
 
-.after {
-	border-top: 1px solid #ccc;
-	border-left: 1px solid #ccc;
-	width: 130px;
-	position: absolute;
-	height: 32px;
-	display: inline;
-	margin-top: -16px;
-	margin-left: -50px;
-	z-index: -1;
-}
-
-.before2 {
-	display: inline;
-	width: 130px;
-	position: absolute;
-	height: 16px;
-	margin-left: -80px;
-	margin-top: -31px;
-	border-right: 1px solid #ccc;
-}
-/**
-.after2 {
-	display: inline;
-	border-bottom: 1px solid #ccc;
-	width: 30px;
-	position: absolute;
-	height: 16px;
-	margin-left: 0px;
-}
-**/
-.before3 {
-	border-top: 1px solid #ccc;
-	border-right: 1px solid #ccc;
-	width: 130px;
-	position: absolute;
-	height: 16px;
-	display: inline;
-	margin-top: -16px;
-	margin-left: -80px;
-}
-/**
-.after3 {
-	border: 1px solid #ccc;
-	width: 80px;
-	position: absolute;
-	height: 48px;
-	display: inline;
-	margin-top: -48px;
-	margin-left: -51px;
-}
-**/
-
 .sitemap ul li.typehome a {
 	background-image: url("../images/home.svg");
 	background-position: center 7px;
